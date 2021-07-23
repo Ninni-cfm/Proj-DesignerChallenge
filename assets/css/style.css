@@ -1,0 +1,228 @@
+/*
+    Assets:
+    font: Roboto
+    colors: #0b0c17 / #ff3571 / #dddddd / #3C30FF / #FFF / #000
+*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+
+/*****************************************************************************
+    some default settings
+*/
+/* remove margin and padding for all elements */
+* {
+    margin: 0;
+    padding: 0;
+}
+/* smooth scrolling, a must-have*/
+html {
+    scroll-behavior: smooth;
+}
+/* set default font and font size for the whole body, use a relative unit for font size */
+body {
+    font-family: "Roboto", sans-serif;
+    font-size: 1.6vh;
+    font-size: 1.1vw;
+}
+/* No text-decoration: underline for links */
+a {
+    text-decoration: none;
+}
+
+/*****************************************************************************
+    header: logo top/left
+*/
+.logo {
+    padding: 2%;
+    display: flex;
+}
+.logo img {
+    width: 2%;
+}
+.logo-text {
+    padding-left: 1%;
+    font-weight: 800;
+}
+.logo-text p:first-of-type {
+    font-size: 1.5em;
+}
+.logo-text p:last-of-type {
+    font-size: 0.8em;
+}
+
+/*****************************************************************************
+    Section: how to become a better designer
+*/
+/*----------------------------------------------------------------------------
+    animated graphics top/right 
+*/
+.cloud {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 45%;
+    text-align: right;
+}
+.cloud img {
+    width: 100%;
+}
+.cloud img:last-of-type {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+/*----------------------------------------------------------------------------
+    Text block
+*/
+#better-designer .text-block {
+    padding-left: 8%;
+    width: 50%;
+}
+#better-designer h1 {
+    padding-top: 30%;
+    font-size: 5em;
+    font-weight: 800;
+}
+#better-designer p {
+    padding: 3% 0 20%;
+    font-size: 1.6em;
+    line-height: 1;
+}
+/* the rocket */
+#better-designer p > img {
+    width: 5%;
+}
+/*----------------------------------------------------------------------------
+    Scroll to see more...
+*/
+#better-designer a {
+    color: #ff3571;
+    font-weight: 800;
+}
+
+/*****************************************************************************
+    Section: An image gallery
+*/
+#gallery img {
+    width: 100%;
+    padding: 10% 0;
+}
+
+/*****************************************************************************
+    Section: Every idea starts with a need
+*/
+#idea-start {
+    display: flex;
+}
+#idea-start div {
+    align-self: flex-start;
+    padding-left: 11%;
+    width: 34%;
+}
+#idea-start h1 {
+    font-size: 4em;
+    font-weight: 800;
+}
+#idea-start img {
+    width: 13%;
+}
+#idea-start p {
+    align-self: flex-start;
+    display: inline-block;
+    width: 45%;
+    padding-top: 2%;
+    font-size: 1.2em;
+    line-height: 2;
+}
+
+/*****************************************************************************
+    Section: After several weeks of sticking to this challenge...
+*/
+#learning {
+    padding: 10% 11%;
+}
+#learning h1 {
+    width: 70%;
+    padding-bottom: 10%;
+    font-size: 4em;
+    font-weight: 800;
+}
+#learning > article {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: wrap;
+}
+#learning > article > div {
+    display: flex;
+    align-items: flex-start;
+    width: 37%;
+    padding: 2% 10% 2% 0%;
+}
+#learning img {
+    padding-right: 5%;
+    width: 7%;
+}
+#learning h4 {
+    padding-top: 1%;
+    font-weight: 900;
+    line-height: 2;
+}
+#learning p {
+    line-height: 2;
+}
+
+/*****************************************************************************
+    Section: Are you ready? Let’s go!! 
+*/
+#lets-go {
+    text-align: center;
+    padding: 10%;
+}
+#lets-go h1 {
+    font-size: 4em;
+    font-weight: 900;
+}
+#lets-go > div > p {
+    font-size: 1.6em;
+    padding: 2% 20% 10%;
+    line-height: 1.5;
+}
+
+#lets-go article {
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+    padding-bottom: 10%;
+}
+
+#lets-go article:nth-of-type(even) {
+    display: flex;
+    flex-direction: row-reverse;
+}
+#lets-go article > img {
+    width: 45%;
+}
+#lets-go article > div {
+    width: 50%;
+    align-self: flex-start;
+}
+
+#lets-go article h2 {
+    font-size: 5em;
+    font-weight: 900;
+    color: #ddd;
+    padding-bottom: 10%;
+}
+
+#lets-go article h4 {
+    font-size: 1.1em;
+    line-height: 4;
+    font-weight: 800;
+}
+#lets-go div > img {
+    width: 7%;
+    z-index: 2;
+}
+#lets-go article p {
+    font-size: 1.1em;
+    line-height: 2;
+}
