@@ -20,11 +20,12 @@ html {
 /* set default font and font size for the whole body, use a relative unit for font size */
 body {
     font-family: "Roboto", sans-serif;
-    font-size: 1.6vh;
     font-size: 1.1vw;
+    color: #0b0c17;
 }
 /* No text-decoration: underline for links */
 a {
+    color: #0b0c17;
     text-decoration: none;
 }
 
@@ -183,17 +184,15 @@ a {
 }
 #lets-go > div > p {
     font-size: 1.6em;
-    padding: 2% 20% 10%;
+    padding: 2% 20% 15%;
     line-height: 1.5;
 }
-
 #lets-go article {
     display: flex;
     justify-content: space-between;
     text-align: left;
-    padding-bottom: 10%;
+    padding: 5%;
 }
-
 #lets-go article:nth-of-type(even) {
     display: flex;
     flex-direction: row-reverse;
@@ -205,14 +204,12 @@ a {
     width: 50%;
     align-self: flex-start;
 }
-
 #lets-go article h2 {
     font-size: 5em;
     font-weight: 900;
     color: #ddd;
     padding-bottom: 10%;
 }
-
 #lets-go article h4 {
     font-size: 1.1em;
     line-height: 4;
@@ -225,4 +222,79 @@ a {
 #lets-go article p {
     font-size: 1.1em;
     line-height: 2;
+}
+
+/*****************************************************************************
+    Section: Do you like this challenge? Subscribe...
+*/
+#subscribe {
+}
+#subscribe form {
+    text-align: center;
+    border: 1px solid black;
+}
+
+#subscribe h1 {
+    font-size: 4em;
+    font-weight: 900;
+    padding-bottom: 4%;
+}
+#subscribe p {
+    font-size: 1.7em;
+    font-weight: 400;
+}
+
+#subscribe input {
+    display: block;
+    margin: 5% auto;
+
+    font-size: 1.5em;
+    font-weight: 400;
+
+    text-align: center;
+    padding: 2% 0;
+    border: none;
+    outline: none;
+    border-radius: 0.5em;
+}
+#email {
+    width: 60%;
+    box-shadow: 0 0 1em #0b0c17;
+}
+#subscribe-button {
+    width: 25%;
+    background: #ff3571;
+    color: white;
+}
+
+/*
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+*/
+/*****************************************************************************
+    Footer
+*/
+footer {
+    display: flex;
+    align-items: baseline;
+    padding: 5% 10% 2%;
+}
+footer img {
+    padding: 0 1%;
+    width: 2.5%;
 }
