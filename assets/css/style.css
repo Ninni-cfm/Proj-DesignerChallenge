@@ -23,6 +23,15 @@ body {
     font-size: 1.1vw;
     color: #0b0c17;
 }
+/* default font-size for headline 1 */
+h1 {
+    font-size: 3.6em;
+    font-weight: 900;
+}
+/* default font-size for paragraph */
+p {
+    font-size: 1.2em;
+}
 /* No text-decoration: underline for links */
 a {
     color: #0b0c17;
@@ -33,21 +42,21 @@ a {
     header: logo top/left
 */
 .logo {
-    padding: 2%;
+    padding: 3%;
     display: flex;
 }
 .logo img {
-    width: 2%;
+    width: 3%;
 }
 .logo-text {
     padding-left: 1%;
     font-weight: 800;
 }
 .logo-text p:first-of-type {
-    font-size: 1.5em;
+    font-size: 1.6em;
 }
 .logo-text p:last-of-type {
-    font-size: 0.8em;
+    font-size: 0.7em;
 }
 
 /*****************************************************************************
@@ -75,17 +84,17 @@ a {
     Text block
 */
 #better-designer .text-block {
-    padding-left: 8%;
+    padding-left: 9%;
     width: 50%;
 }
 #better-designer h1 {
     padding-top: 30%;
-    font-size: 5em;
-    font-weight: 800;
+    font-size: 4.6em;
+    font-weight: 900;
 }
 #better-designer p {
     padding: 3% 0 20%;
-    font-size: 1.6em;
+    font-size: 1.5em;
     line-height: 1;
 }
 /* the rocket */
@@ -97,7 +106,8 @@ a {
 */
 #better-designer a {
     color: #ff3571;
-    font-weight: 800;
+    font-size: 0.9em;
+    font-weight: 900;
 }
 
 /*****************************************************************************
@@ -116,12 +126,12 @@ a {
 }
 #idea-start div {
     align-self: flex-start;
-    padding-left: 11%;
-    width: 34%;
+    padding-left: 12%;
+    width: 32%;
 }
 #idea-start h1 {
-    font-size: 4em;
-    font-weight: 800;
+    /* font-size: 4em;
+    font-weight: 800; */
 }
 #idea-start img {
     width: 13%;
@@ -131,7 +141,6 @@ a {
     display: inline-block;
     width: 45%;
     padding-top: 2%;
-    font-size: 1.2em;
     line-height: 2;
 }
 
@@ -139,13 +148,11 @@ a {
     Section: After several weeks of sticking to this challenge...
 */
 #learning {
-    padding: 10% 11%;
+    padding: 10% 9% 10% 12%;
 }
 #learning h1 {
     width: 70%;
     padding-bottom: 10%;
-    font-size: 4em;
-    font-weight: 800;
 }
 #learning > article {
     display: flex;
@@ -155,15 +162,16 @@ a {
 #learning > article > div {
     display: flex;
     align-items: flex-start;
-    width: 37%;
-    padding: 2% 10% 2% 0%;
+    width: 43%;
+    padding: 2% 0;
 }
 #learning img {
-    padding-right: 5%;
+    padding-right: 4%;
     width: 7%;
 }
 #learning h4 {
     padding-top: 1%;
+    font-size: 1.2em;
     font-weight: 900;
     line-height: 2;
 }
@@ -176,7 +184,7 @@ a {
 */
 #lets-go {
     text-align: center;
-    padding: 10%;
+    padding: 10% 0;
 }
 #lets-go h1 {
     font-size: 4em;
@@ -196,17 +204,18 @@ a {
 #lets-go article:nth-of-type(even) {
     display: flex;
     flex-direction: row-reverse;
+    justify-items: center;
 }
 #lets-go article > img {
     width: 45%;
 }
 #lets-go article > div {
-    width: 50%;
-    align-self: flex-start;
+    margin-left: 5%;
+    width: 45%;
 }
 #lets-go article h2 {
-    font-size: 5em;
-    font-weight: 900;
+    font-size: 4.8em;
+    font-weight: 700;
     color: #ddd;
     padding-bottom: 10%;
 }
@@ -227,72 +236,52 @@ a {
 /*****************************************************************************
     Section: Do you like this challenge? Subscribe...
 */
-#subscribe {
-}
 #subscribe form {
     text-align: center;
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 
 #subscribe h1 {
-    font-size: 4em;
+    /* font-size: 3.6em; */
     font-weight: 900;
     padding-bottom: 4%;
 }
 #subscribe p {
-    font-size: 1.7em;
+    font-size: 1.5em;
     font-weight: 400;
 }
 
 #subscribe input {
     display: block;
-    margin: 5% auto;
+    margin: 3% auto;
 
-    font-size: 1.5em;
+    font-size: 1.3em;
     font-weight: 400;
-
     text-align: center;
-    padding: 2% 0;
+
     border: none;
     outline: none;
-    border-radius: 0.5em;
+    border-radius: 0.3em;
 }
 #email {
-    width: 60%;
-    box-shadow: 0 0 1em #0b0c17;
+    width: 45%;
+    padding: 2% 0;
+    box-shadow: 0 0 1em #ddd;
 }
 #subscribe-button {
-    width: 25%;
+    width: 18%;
+    padding: 1.5% 0;
     background: #ff3571;
     color: white;
 }
 
-/*
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-*/
 /*****************************************************************************
     Footer
 */
 footer {
     display: flex;
     align-items: baseline;
-    padding: 5% 10% 2%;
+    padding: 5% 9% 2%;
 }
 footer img {
     padding: 0 1%;
