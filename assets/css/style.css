@@ -75,11 +75,26 @@ a {
 .cloud img {
     width: 100%;
 }
-.cloud img:last-of-type {
+.cloud .its-me {
     position: absolute;
     top: 0;
-    right: 0;
+    right: 5%;
+
+    /*  start animation */
+    animation-name: its-me;
+    animation-timing-function: linear;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
 }
+@keyframes its-me {
+    from {
+        transform: rotate(0deg) translateX(5%) rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg) translateX(5%) rotate(-360deg);
+    }
+}
+
 /*----------------------------------------------------------------------------
     Text block
 */
@@ -128,10 +143,6 @@ a {
     align-self: flex-start;
     padding-left: 12%;
     width: 32%;
-}
-#idea-start h1 {
-    /* font-size: 4em;
-    font-weight: 800; */
 }
 #idea-start img {
     width: 13%;
@@ -236,22 +247,21 @@ a {
 /*****************************************************************************
     Section: Do you like this challenge? Subscribe...
 */
-#subscribe form {
-    text-align: center;
-    /* border: 1px solid black; */
-}
 
-#subscribe h1 {
-    /* font-size: 3.6em; */
-    font-weight: 900;
+/*----------------------------------------------------------------------------
+    Form 1 - Subscribe 
+*/
+form {
+    text-align: center;
+}
+#email-subscribe h1 {
     padding-bottom: 4%;
 }
-#subscribe p {
+#email-subscribe p {
     font-size: 1.5em;
     font-weight: 400;
 }
-
-#subscribe input {
+#email-subscribe input {
     display: block;
     margin: 3% auto;
 
@@ -274,16 +284,79 @@ a {
     background: #ff3571;
     color: white;
 }
+#subscribe-button:hover {
+    background: linear-gradient(to right, #ff3571, #3c30ff);
+}
+
+/*----------------------------------------------------------------------------
+    Form 2 - Cconfirmation
+*/
+#email-confirm {
+    box-shadow: 0 0 1em #ddd;
+    border-radius: 1em;
+
+    width: 70%;
+    margin: 5% auto;
+}
+#email-confirm div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 48vh;
+}
+#email-confirm h1 {
+    font-size: 2em;
+}
+#confirm-button {
+    align-self: center;
+    font-size: 1.3em;
+    font-weight: 400;
+    text-align: center;
+
+    border: none;
+    outline: none;
+    border-radius: 0.3em;
+
+    padding: 1.5% 2%;
+    background: #3c30ff;
+    color: white;
+}
+#confirm-button:hover {
+    background: linear-gradient(to right, #3c30ff, #ff3571);
+}
+
+/*----------------------------------------------------------------------------
+    class for hiding elements
+*/
+.formular-hide {
+    display: none;
+}
 
 /*****************************************************************************
     Footer
 */
 footer {
     display: flex;
-    align-items: baseline;
+    align-items: center;
     padding: 5% 9% 2%;
+    letter-spacing: -0.04em;
+}
+footer p {
+    padding-top: 1%;
 }
 footer img {
     padding: 0 1%;
-    width: 2.5%;
+    width: 3%;
+    animation-name: pulsing;
+    animation-duration: 0.75s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+@keyframes pulsing {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(0.75);
+    }
 }

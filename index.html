@@ -34,7 +34,7 @@
             <!-- animated graphics top/right -->
             <div class="cloud">
                 <img src="assets/img/ilustracion1.png" alt="">
-                <img src="assets/img/ilustracion_people.png" alt="">
+                <img src="assets/img/ilustracion_people.png" alt="" class="its-me">
             </div>
 
             <!-- Text block -->
@@ -194,25 +194,45 @@
             </article>
         </section>
 
-
-        <!-- *****************************************************************
-            Section: Do you like this challenge? Subscribe...
-        -->
-        <section id="subscribe">
-            <form action="">
-                <h1>Do you like this challenge?</h1>
-                <p>Subscribe to be the first to hear about updates, tips and recommendations!</p>
-                <input type="email" name="email" id="email" placeholder="Write your email here">
-                <input type="button" id="subscribe-button" value="Subscribe" onclick="subscribe()">
-            </form>
-        </section>
-
     </main>
 
+    <!-- *********************************************************************
+        Section: Do you like this challenge? Subscribe...
+    -->
+    <section id="subscribe">
+        <!-- =================================================================
+            Form 1 - Subscribe
+        -->
+        <form action="#" id="email-subscribe">
+            <h1>Do you like this challenge?</h1>
+            <p>Subscribe to be the first to hear about updates, tips and recommendations!</p>
+            <input type="email" name="email" id="email" placeholder="Write your email here" required>
+            <input type="button" id="subscribe-button" value="Subscribe" onclick="subscribe()">
+        </form>
+
+        <!-- =================================================================
+            Form 2 - Cconfirmation
+        -->
+        <form action="#" id="email-confirm">
+            <div>
+                <h2>🥳</h2>
+                <h1>YOUR EMAIL HAS BEEN RECEIVED.</h1>
+                <h1>THANKS FOR SUBSCRIBING.</h1>
+                <p>
+                    Now we just need to confirm your email address - please click the link in the email we sent to you.
+                    Thanks!
+                </p>
+                <input type="button" id="confirm-button" value="BACK TO DESIGNERCHALLENGE.COM" onclick="confirm()">
+            </div>
+        </form>
+    </section>
 
 
+    <!-- *********************************************************************
+        Footer
+    -->
     <footer>
-        <p> Created with Love a Webdesigner </p>
+        <p> Created with Love by a Webdesigner </p>
         <img src="assets/img/love.png" alt="">
     </footer>
 
