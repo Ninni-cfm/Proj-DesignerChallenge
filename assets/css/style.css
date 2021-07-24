@@ -30,7 +30,7 @@ h1 {
 }
 /* default font-size for paragraph */
 p {
-    font-size: 1.2em;
+    font-size: 1.1em;
 }
 /* No text-decoration: underline for links */
 a {
@@ -140,7 +140,6 @@ a {
     display: flex;
 }
 #idea-start div {
-    align-self: flex-start;
     padding-left: 12%;
     width: 32%;
 }
@@ -148,7 +147,6 @@ a {
     width: 13%;
 }
 #idea-start p {
-    align-self: flex-start;
     display: inline-block;
     width: 45%;
     padding-top: 2%;
@@ -230,17 +228,24 @@ a {
     color: #ddd;
     padding-bottom: 10%;
 }
+#lets-go .number {
+    font-size: 4.8em;
+    font-weight: 700;
+    color: #ddd;
+    padding-bottom: 10%;
+}
+
 #lets-go article h4 {
     font-size: 1.1em;
     line-height: 4;
-    font-weight: 800;
+    font-weight: 700;
 }
 #lets-go div > img {
     width: 7%;
     z-index: 2;
 }
 #lets-go article p {
-    font-size: 1.1em;
+    /* font-size: 1.1em; */
     line-height: 2;
 }
 
@@ -253,6 +258,9 @@ a {
 */
 form {
     text-align: center;
+
+    width: 70%;
+    margin: 5% auto;
 }
 #email-subscribe h1 {
     padding-bottom: 4%;
@@ -325,13 +333,6 @@ form {
     background: linear-gradient(to right, #3c30ff, #ff3571);
 }
 
-/*----------------------------------------------------------------------------
-    class for hiding elements
-*/
-.formular-hide {
-    display: none;
-}
-
 /*****************************************************************************
     Footer
 */
@@ -359,4 +360,12 @@ footer img {
     to {
         transform: scale(0.75);
     }
+}
+
+/*----------------------------------------------------------------------------
+    helper-class for hiding elements, used by JS to hide element by adding this class
+    and make them visible again by removing this.
+*/
+.element-hide {
+    display: none;
 }

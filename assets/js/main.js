@@ -1,5 +1,5 @@
 // Define global vars for elements we use frequently
-let main, confirmForm, subscribeForm;
+let mainContent, formConfirm;
 
 // call the initialization function
 initialize();
@@ -7,15 +7,14 @@ initialize();
 // initialisation of the website
 function initialize() {
 
-    main = document.getElementById("main");
-    confirmForm = document.getElementById("email-confirm");
-    subscribeForm = document.getElementById("email-subscribe");
+    mainContent = document.getElementById("main");
+    formConfirm = document.getElementById("email-confirm");
 
-    // hide the subscribe formular
-    confirmForm.classList.add("formular-hide");
+    hideElement(formConfirm); // hide the confirm formular
 }
 
-// the subscribe butten has been clicked
+// The subscribe button was clicked, show the confirm form and 
+// hide the main-content
 function subscribe() {
 
     // get the entered email address
@@ -28,55 +27,64 @@ function subscribe() {
         return;
     }
 
-    // show the confirm email formular
-    confirmForm.classList.remove("formular-hide");
-
-    // hide the subscribe formular
-    subscribeForm.classList.add("formular-hide");
-
-    // hide the main content
-    main.classList.add("formular-hide");
+    showElement(formConfirm);
+    hideElement(mainContent);
 
     // all done, reset input text for email address
     email.value = "";
 }
 
-// after subscribing you get a confirmation
+// The 'back to ...' botton was clicked, hide the confirm form and 
+// show the main-content
 function confirm() {
 
-    // hide the confirm email formular
-    confirmForm.classList.add("formular-hide");
-
-    // show the subscribe formular
-    subscribeForm.classList.remove("formular-hide");
-
-    // show the main content
-    main.classList.remove("formular-hide");
+    showElement(mainContent);
+    hideElement(formConfirm);
 }
+
 
 // Function to validate email addresses using regex
 function validateEmailAddress(emailAddress) {
 
     // regex email validation pattern
-    const regexEmail = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    const REGEX_EMAIL = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 
     // validate a email address using regex
-    return regexEmail.test(emailAddress);
+    return REGEX_EMAIL.test(emailAddress);
 }
 
 
+// Functions to show/hide HTML elements
+function showElement(element) {
 
+    hideElement(element, false);
+}
+function hideElement(element, hidden = true) {
 
+    // if element is a string, try to get the element
+    if (typeof element == typeof "") {
+        element = document.getElementById(element);
+    }
 
+    if (element == null) {
+        debugPrint("hideElement(...): Element is null!")
+    }
 
+    // helper-class used to hide elements
+    var helperClass = "element-hide";
 
+    if (hidden) {
+        // hide element by adding helper-class
+        element.classList.add(helperClass);
+    } else {
+        // hide element by removing helper-class
+        element.classList.remove(helperClass);
+    }
+}
 
-
-
-
-
-
-function debugLog(...params) {
+// helper function for debug output.
+function debugPrint(...params) {
     console.log(params);
 }
+
 

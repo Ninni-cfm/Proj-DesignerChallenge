@@ -144,7 +144,7 @@
             <article>
                 <img src="assets/img/step01.png" alt="">
                 <div>
-                    <h2>01</h2>
+                    <p class="number">01</p>
                     <img src="assets/img/step01.svg" alt="">
                     <h4>Find your problem</h4>
                     <p>It has to be a problem that’s personally affecting or affected you, like finding your keys,
@@ -157,7 +157,7 @@
             <article>
                 <img src="assets/img/step02.png" alt="">
                 <div>
-                    <h2>02</h2>
+                    <p class="number">02</p>
                     <img src="assets/img/step02.svg" alt="">
                     <h4>Think about the solution</h4>
                     <p>It's time to look for solutions. What can you do to solve these problems? It's time to think
@@ -169,7 +169,7 @@
             <article>
                 <img src="assets/img/step03.png" alt="">
                 <div>
-                    <h2>03</h2>
+                    <p class="number">03</p>
                     <img src="assets/img/step03.svg" alt="">
                     <h4>Design your proposal</h4>
                     <p>How can design help solve your problem? It's time to think about features and functionality,
@@ -181,7 +181,7 @@
             <article>
                 <img src="assets/img/step04.png" alt="">
                 <div>
-                    <h2>04</h2>
+                    <p class="number">04</p>
                     <img src="assets/img/step04.svg" alt="">
                     <h4>Share your work</h4>
                     <p>Share your design on instagram or dribbble with the hashtag #thedesignproject Remember to
@@ -194,38 +194,42 @@
             </article>
         </section>
 
+
+        <!-- *********************************************************************
+                Section: Do you like this challenge? Subscribe...
+        -->
+        <section id="subscribe">
+            <!-- =================================================================
+                Form 1 - Subscribe
+            -->
+            <form action="#" id="email-subscribe">
+                <h1>Do you like this challenge?</h1>
+                <p>Subscribe to be the first to hear about updates, tips and recommendations!</p>
+                <input type="email" name="email" id="email" placeholder="Write your email here" required>
+                <input type="button" id="subscribe-button" value="Subscribe" onclick="subscribe()">
+            </form>
+        </section>
+
     </main>
 
-    <!-- *********************************************************************
-        Section: Do you like this challenge? Subscribe...
-    -->
-    <section id="subscribe">
-        <!-- =================================================================
-            Form 1 - Subscribe
-        -->
-        <form action="#" id="email-subscribe">
-            <h1>Do you like this challenge?</h1>
-            <p>Subscribe to be the first to hear about updates, tips and recommendations!</p>
-            <input type="email" name="email" id="email" placeholder="Write your email here" required>
-            <input type="button" id="subscribe-button" value="Subscribe" onclick="subscribe()">
-        </form>
 
-        <!-- =================================================================
-            Form 2 - Cconfirmation
-        -->
-        <form action="#" id="email-confirm">
-            <div>
-                <h2>🥳</h2>
-                <h1>YOUR EMAIL HAS BEEN RECEIVED.</h1>
-                <h1>THANKS FOR SUBSCRIBING.</h1>
-                <p>
-                    Now we just need to confirm your email address - please click the link in the email we sent to you.
-                    Thanks!
-                </p>
-                <input type="button" id="confirm-button" value="BACK TO DESIGNERCHALLENGE.COM" onclick="confirm()">
-            </div>
-        </form>
-    </section>
+    <!-- =================================================================
+        Form 2 - Cconfirmation
+        This form must be placed outside of main because we will hide main
+        and display this form dynamically
+    -->
+    <form action="#" id="email-confirm">
+        <div>
+            <h2>🥳</h2>
+            <h1>YOUR EMAIL HAS BEEN RECEIVED.</h1>
+            <h1>THANKS FOR SUBSCRIBING.</h1>
+            <p>
+                Now we just need to confirm your email address - please click the link in the email we sent to you.
+                Thanks!
+            </p>
+            <input type="button" id="confirm-button" value="BACK TO DESIGNERCHALLENGE.COM" onclick="confirm()">
+        </div>
+    </form>
 
 
     <!-- *********************************************************************
