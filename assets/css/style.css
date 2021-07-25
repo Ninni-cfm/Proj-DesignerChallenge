@@ -13,15 +13,15 @@
     margin: 0;
     padding: 0;
 }
-/* smooth scrolling, a must-have*/
+/* smooth scrolling, a must-have */
 html {
     scroll-behavior: smooth;
 }
-/* set default font and font size for the whole body, use a relative unit for font size */
+/* set default font-family, font size foand color the whole body, use a relative unit for font size */
 body {
     font-family: "Roboto", sans-serif;
     font-size: 1.1vw;
-    color: #0b0c17;
+    color: black;
 }
 /* default font-size for headline 1 */
 h1 {
@@ -32,9 +32,9 @@ h1 {
 p {
     font-size: 1.1em;
 }
-/* No text-decoration: underline for links */
+/* set dDefault color and no text-decoration for links */
 a {
-    color: #0b0c17;
+    color: black;
     text-decoration: none;
 }
 
@@ -42,8 +42,9 @@ a {
     header: logo top/left
 */
 .logo {
-    padding: 3%;
+    padding: 2%;
     display: flex;
+    color: #0b0c17;
 }
 .logo img {
     width: 3%;
@@ -252,16 +253,16 @@ a {
 /*****************************************************************************
     Section: Do you like this challenge? Subscribe...
 */
-
-/*----------------------------------------------------------------------------
-    Form 1 - Subscribe 
-*/
 form {
     text-align: center;
-
     width: 70%;
-    margin: 5% auto;
+    margin: 2% auto;
+    padding: 4%;
 }
+
+/*----------------------------------------------------------------------------
+    Form 1 - email-subscribe 
+*/
 #email-subscribe h1 {
     padding-bottom: 4%;
 }
@@ -297,14 +298,11 @@ form {
 }
 
 /*----------------------------------------------------------------------------
-    Form 2 - Cconfirmation
+    Form 2 - Confirmation
 */
 #email-confirm {
     box-shadow: 0 0 1em #ddd;
     border-radius: 1em;
-
-    width: 70%;
-    margin: 5% auto;
 }
 #email-confirm div {
     display: flex;
@@ -362,9 +360,9 @@ footer img {
     }
 }
 
-/*----------------------------------------------------------------------------
-    helper-class for hiding elements, used by JS to hide element by adding this class
-    and make them visible again by removing this.
+/*****************************************************************************
+    helper-class for hiding elements, used by JS to hide elements by adding 
+    this class and make them visible again by removing the class.
 */
 .element-hide {
     display: none;

@@ -18,8 +18,7 @@ function initialize() {
 function subscribe() {
 
     // get the entered email address
-    let email = document.getElementById("email");
-    let emailAdress = email.value;
+    let emailAdress = document.getElementById("email").value;
 
     // check if the entered email address is valid
     if (!validateEmailAddress(emailAdress)) {
