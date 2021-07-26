@@ -24,7 +24,8 @@ body {
     color: black;
 }
 /* default font-size for headline 1 */
-h1 {
+h1,
+h2 {
     font-size: 3.6em;
     font-weight: 900;
 }
@@ -103,12 +104,12 @@ a {
     padding-left: 9%;
     width: 50%;
 }
-#better-designer h1 {
+#better-designer h2 {
     padding-top: 30%;
     font-size: 4.6em;
     font-weight: 900;
 }
-#better-designer p {
+#better-designer h3 {
     padding: 3% 0 20%;
     font-size: 1.5em;
     line-height: 1;
@@ -140,7 +141,7 @@ a {
 #idea-start {
     display: flex;
 }
-#idea-start div {
+#idea-start h2 {
     padding-left: 12%;
     width: 32%;
 }
@@ -160,7 +161,7 @@ a {
 #learning {
     padding: 10% 9% 10% 12%;
 }
-#learning h1 {
+#learning h2 {
     width: 70%;
     padding-bottom: 10%;
 }
@@ -196,7 +197,7 @@ a {
     text-align: center;
     padding: 10% 0;
 }
-#lets-go h1 {
+#lets-go h2 {
     font-size: 4em;
     font-weight: 900;
 }
@@ -263,7 +264,7 @@ form {
 /*----------------------------------------------------------------------------
     Form 1 - email-subscribe 
 */
-#email-subscribe h1 {
+#email-subscribe h2 {
     padding-bottom: 4%;
 }
 #email-subscribe p {
@@ -310,7 +311,7 @@ form {
     justify-content: space-evenly;
     height: 48vh;
 }
-#email-confirm h1 {
+#email-confirm h2 {
     font-size: 2em;
 }
 #confirm-button {
