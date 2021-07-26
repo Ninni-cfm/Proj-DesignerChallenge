@@ -119,7 +119,7 @@ a {
 }
 /* the rocket */
 #better-designer p > img {
-    height: 2em;
+    width: 2$;
 }
 /*----------------------------------------------------------------------------
     Scroll to see more...
