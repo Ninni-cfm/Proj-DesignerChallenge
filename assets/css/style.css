@@ -47,6 +47,9 @@ a {
     display: flex;
     color: #0b0c17;
 }
+.logo a {
+    color: #0b0c17;
+}
 .logo img {
     width: 3%;
 }
@@ -116,7 +119,7 @@ a {
 }
 /* the rocket */
 #better-designer p > img {
-    width: 5%;
+    height: 2em;
 }
 /*----------------------------------------------------------------------------
     Scroll to see more...
